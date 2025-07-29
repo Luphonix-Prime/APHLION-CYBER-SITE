@@ -1,0 +1,112 @@
+
+{% extends 'base.html' %}
+
+{% block title %}VAPT - Vulnerability Assessment & Penetration Testing - Aphelion Cyber Security{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-gradient-cyber">
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-flex items-center px-4 py-2 bg-[#9655BD]/20 rounded-full mb-6">
+                    <i class="ri-bug-line text-[#9655BD] mr-2"></i>
+                    <span class="text-[#9655BD] font-medium">VAPT Services</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Vulnerability Assessment &
+                    <span class="text-gradient">Penetration Testing</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                    Comprehensive security testing services to identify vulnerabilities and validate your defenses against real-world attack scenarios.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="{% url 'contact' %}" class="bg-[#9655BD] hover:bg-[#9655BD]/80 text-white font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105">
+                        Schedule Assessment
+                    </a>
+                    <a href="#services" class="border border-gray-600 hover:border-[#9655BD] text-white font-medium py-3 px-8 rounded-lg transition-all">
+                        View Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VAPT Services -->
+    <section id="services" class="py-20 bg-[#0f0f0f]/50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Comprehensive Security Testing</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Professional vulnerability assessments and penetration testing across all your digital assets
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-server-line text-2xl text-[#9655BD]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Network Penetration Testing</h3>
+                    <p class="text-gray-300">Comprehensive testing of network infrastructure, identifying vulnerabilities in firewalls, routers, and network services.</p>
+                </div>
+
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-window-line text-2xl text-[#9655BD]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Web Application Testing</h3>
+                    <p class="text-gray-300">Detailed security assessment of web applications, including OWASP Top 10 vulnerabilities and business logic flaws.</p>
+                </div>
+
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-wireless-charging-line text-2xl text-[#9655BD]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Wireless Security Testing</h3>
+                    <p class="text-gray-300">Assessment of wireless networks, including WiFi, Bluetooth, and other wireless protocols for security weaknesses.</p>
+                </div>
+
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-user-search-line text-2xl text-[#9655BD]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Social Engineering Testing</h3>
+                    <p class="text-gray-300">Simulated social engineering attacks to test human factors and security awareness within your organization.</p>
+                </div>
+
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-smartphone-line text-2xl text-[#9655BD]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Mobile Application Testing</h3>
+                    <p class="text-gray-300">Security testing of iOS and Android applications, including static and dynamic analysis techniques.</p>
+                </div>
+
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-file-code-line text-2xl text-[#9655BD]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Source Code Review</h3>
+                    <p class="text-gray-300">Manual and automated source code analysis to identify security vulnerabilities in your applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="bg-gradient-to-r from-[#9655BD]/20 to-[#9655BD]/10 rounded-2xl p-12 text-center border border-[#9655BD]/20">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Test Your Defenses?</h2>
+                <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Get comprehensive vulnerability assessment and penetration testing services from our certified security experts.
+                </p>
+                <a href="{% url 'contact' %}" class="bg-[#9655BD] hover:bg-[#9655BD]/80 text-white font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105">
+                    Schedule Your Test
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

@@ -1,0 +1,112 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Third Party Risk Management - Aphelion Cyber Security{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-gradient-cyber">
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-flex items-center px-4 py-2 bg-[#9655BD]/20 rounded-full mb-6">
+                    <i class="ri-links-line text-[#9655BD] mr-2"></i>
+                    <span class="text-[#9655BD] font-medium">Third Party Risk Management</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Vendor Risk
+                    <span class="text-gradient">Assessment Framework</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                    Comprehensive third-party risk management solutions to assess, monitor, and mitigate risks from your vendor ecosystem.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="{% url 'contact' %}" class="bg-[#9655BD] hover:bg-[#9655BD]/80 text-white font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105">
+                        Start Assessment
+                    </a>
+                    <a href="#framework" class="border border-gray-600 hover:border-[#9655BD] text-white font-medium py-3 px-8 rounded-lg transition-all">
+                        View Framework
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risk Management Framework -->
+    <section id="framework" class="py-20 bg-[#0f0f0f]/50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Comprehensive Vendor Risk Assessment</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    End-to-end third-party risk management from initial assessment to ongoing monitoring
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-search-2-line text-2xl text-[#9655BD]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Vendor Due Diligence</h3>
+                    <p class="text-gray-300">Comprehensive pre-engagement assessments including security questionnaires, financial stability, and compliance reviews.</p>
+                </div>
+
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-pulse-line text-2xl text-[#9655BD]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Continuous Monitoring</h3>
+                    <p class="text-gray-300">Ongoing risk monitoring with automated alerts for changes in vendor risk profiles and security posture.</p>
+                </div>
+
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-bar-chart-box-line text-2xl text-[#9655BD]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Risk Scoring & Analytics</h3>
+                    <p class="text-gray-300">Advanced risk scoring models with predictive analytics to identify potential vendor risks before they materialize.</p>
+                </div>
+
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-contract-line text-2xl text-[#9655BD]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Contract Management</h3>
+                    <p class="text-gray-300">Security clause templates and contract review services to ensure proper risk allocation and security requirements.</p>
+                </div>
+
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-file-shield-line text-2xl text-[#9655BD]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Compliance Validation</h3>
+                    <p class="text-gray-300">Verification of vendor compliance with industry standards, regulations, and your organization's security policies.</p>
+                </div>
+
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-alert-line text-2xl text-[#9655BD]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Incident Response</h3>
+                    <p class="text-gray-300">Coordinated incident response planning and execution when vendor-related security incidents occur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="bg-gradient-to-r from-[#9655BD]/20 to-[#9655BD]/10 rounded-2xl p-12 text-center border border-[#9655BD]/20">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Secure Your Vendor Ecosystem</h2>
+                <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Don't let third-party risks compromise your security. Implement comprehensive vendor risk management today.
+                </p>
+                <a href="{% url 'contact' %}" class="bg-[#9655BD] hover:bg-[#9655BD]/80 text-white font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

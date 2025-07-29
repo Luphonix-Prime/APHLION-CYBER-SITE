@@ -1,0 +1,31 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Mobile Application Security Testing - Aphelion Cyber Security{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-gradient-cyber">
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-flex items-center px-4 py-2 bg-[#9655BD]/20 rounded-full mb-6">
+                    <i class="ri-smartphone-line text-[#9655BD] mr-2"></i>
+                    <span class="text-[#9655BD] font-medium">Mobile App Security</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Mobile Application
+                    <span class="text-gradient">Security Testing</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                    Comprehensive security testing for iOS and Android applications to identify vulnerabilities and protect user data.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="{% url 'contact' %}" class="bg-[#9655BD] hover:bg-[#9655BD]/80 text-white font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105">
+                        Get Testing
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

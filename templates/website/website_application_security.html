@@ -1,0 +1,62 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Website Application Security Testing - Aphelion Cyber Security{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-gradient-cyber">
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-flex items-center px-4 py-2 bg-[#9655BD]/20 rounded-full mb-6">
+                    <i class="ri-global-line text-[#9655BD] mr-2"></i>
+                    <span class="text-[#9655BD] font-medium">Web Application Security</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Website Application
+                    <span class="text-gradient">Security Testing</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                    Comprehensive security testing for web applications to identify vulnerabilities and protect against cyber threats.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="{% url 'contact' %}" class="bg-[#9655BD] hover:bg-[#9655BD]/80 text-white font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105">
+                        Get Testing
+                    </a>
+                    <a href="#features" class="border border-gray-600 hover:border-[#9655BD] text-white font-medium py-3 px-8 rounded-lg transition-all">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-20 bg-[#0f0f0f]/50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-bug-line text-2xl text-[#9655BD]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">OWASP Top 10 Testing</h3>
+                    <p class="text-gray-300">Comprehensive testing against the OWASP Top 10 web application security risks.</p>
+                </div>
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-shield-check-line text-2xl text-[#9655BD]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Authentication Testing</h3>
+                    <p class="text-gray-300">Thorough assessment of authentication mechanisms and session management.</p>
+                </div>
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-database-line text-2xl text-[#9655BD]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">SQL Injection Testing</h3>
+                    <p class="text-gray-300">Advanced testing for SQL injection vulnerabilities and database security.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

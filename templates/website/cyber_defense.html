@@ -1,0 +1,279 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Cyber Defense Services - Aphelion Cyber{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="relative pt-32 pb-16 overflow-hidden">
+    <div class="absolute inset-0 bg-cyber-pattern opacity-30"></div>
+    <div class="container mx-auto px-4 md:px-6 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+                🛡️ <span class="text-gradient">Cyber Defense</span>
+            </h1>
+            <p class="text-xl text-gray-300 mb-8">
+                Advanced penetration testing and vulnerability assessment services to identify and remediate security weaknesses before attackers exploit them.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Services Grid -->
+<section class="py-20">
+    <div class="container mx-auto px-4 md:px-6">
+        <!-- VAPT Service -->
+        <div class="mb-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="ri-bug-line text-3xl text-[#9655BD]"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-6">VAPT (Vulnerability Assessment & Penetration Testing)</h2>
+                    <p class="text-lg text-gray-300 mb-6">
+                        Comprehensive security testing that combines automated vulnerability scanning with manual penetration testing to identify security weaknesses in your infrastructure, applications, and networks.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
+                            <span class="text-gray-300">Network penetration testing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
+                            <span class="text-gray-300">Application security assessment</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
+                            <span class="text-gray-300">Infrastructure vulnerability scanning</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
+                            <span class="text-gray-300">Social engineering testing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
+                            <span class="text-gray-300">Wireless security assessment</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
+                            <span class="text-gray-300">Physical security testing</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative">
+                    <img 
+                        src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80" 
+                        alt="VAPT Testing" 
+                        class="rounded-2xl shadow-2xl border border-gray-700"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <!-- Website Application Security Testing -->
+        <div class="mb-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1 relative">
+                    <img 
+                        src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80" 
+                        alt="Website Security Testing" 
+                        class="rounded-2xl shadow-2xl border border-gray-700"
+                    />
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="ri-global-line text-3xl text-[#9655BD]"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-6">Website Application Security Testing</h2>
+                    <p class="text-lg text-gray-300 mb-6">
+                        Comprehensive security testing for web applications and websites to identify vulnerabilities and ensure robust protection against cyber attacks.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
+                            <span class="text-gray-300">OWASP Top 10 vulnerability testing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
+                            <span class="text-gray-300">SQL injection detection and prevention</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
+                            <span class="text-gray-300">Cross-site scripting (XSS) vulnerability assessment</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
+                            <span class="text-gray-300">Authentication and session management testing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
+                            <span class="text-gray-300">Input validation and sanitization checks</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
+                            <span class="text-gray-300">Business logic vulnerability assessment</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Security Testing Services -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+            <!-- Mobile Application Security -->
+            <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                <div class="w-12 h-12 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mb-6">
+                    <i class="ri-smartphone-line text-2xl text-[#9655BD]"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Mobile Application Security</h3>
+                <p class="text-gray-300 mb-6">
+                    Comprehensive security testing for iOS and Android applications.
+                </p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-start text-sm">
+                        <i class="ri-check-line text-[#9655BD] mr-2 mt-1"></i>
+                        <span class="text-gray-300">Static and dynamic analysis</span>
+                    </li>
+                    <li class="flex items-start text-sm">
+                        <i class="ri-check-line text-[#9655BD] mr-2 mt-1"></i>
+                        <span class="text-gray-300">API security testing</span>
+                    </li>
+                    <li class="flex items-start text-sm">
+                        <i class="ri-check-line text-[#9655BD] mr-2 mt-1"></i>
+                        <span class="text-gray-300">Data storage security</span>
+                    </li>
+                </ul>
+                <a href="{% url 'contact' %}" class="inline-flex items-center text-[#9655BD] hover:text-[#8b5cf6] transition-colors font-medium">
+                    Learn more
+                    <i class="ri-arrow-right-line ml-2"></i>
+                </a>
+            </div>
+
+            <!-- Cloud Security Assessment -->
+            <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                <div class="w-12 h-12 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mb-6">
+                    <i class="ri-cloud-line text-2xl text-[#9655BD]"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Cloud Security Assessment</h3>
+                <p class="text-gray-300 mb-6">
+                    Evaluate and secure your cloud infrastructure and services.
+                </p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-start text-sm">
+                        <i class="ri-check-line text-[#9655BD] mr-2 mt-1"></i>
+                        <span class="text-gray-300">AWS, Azure, GCP security</span>
+                    </li>
+                    <li class="flex items-start text-sm">
+                        <i class="ri-check-line text-[#9655BD] mr-2 mt-1"></i>
+                        <span class="text-gray-300">Container security</span>
+                    </li>
+                    <li class="flex items-start text-sm">
+                        <i class="ri-check-line text-[#9655BD] mr-2 mt-1"></i>
+                        <span class="text-gray-300">IAM configuration review</span>
+                    </li>
+                </ul>
+                <a href="{% url 'contact' %}" class="inline-flex items-center text-[#9655BD] hover:text-[#8b5cf6] transition-colors font-medium">
+                    Learn more
+                    <i class="ri-arrow-right-line ml-2"></i>
+                </a>
+            </div>
+
+            <!-- API Security Testing -->
+            <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                <div class="w-12 h-12 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mb-6">
+                    <i class="ri-code-line text-2xl text-[#9655BD]"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">API Security Testing</h3>
+                <p class="text-gray-300 mb-6">
+                    Comprehensive testing of REST, GraphQL, and SOAP APIs.
+                </p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-start text-sm">
+                        <i class="ri-check-line text-[#9655BD] mr-2 mt-1"></i>
+                        <span class="text-gray-300">Authentication bypass testing</span>
+                    </li>
+                    <li class="flex items-start text-sm">
+                        <i class="ri-check-line text-[#9655BD] mr-2 mt-1"></i>
+                        <span class="text-gray-300">Rate limiting assessment</span>
+                    </li>
+                    <li class="flex items-start text-sm">
+                        <i class="ri-check-line text-[#9655BD] mr-2 mt-1"></i>
+                        <span class="text-gray-300">Data validation testing</span>
+                    </li>
+                </ul>
+                <a href="{% url 'contact' %}" class="inline-flex items-center text-[#9655BD] hover:text-[#8b5cf6] transition-colors font-medium">
+                    Learn more
+                    <i class="ri-arrow-right-line ml-2"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Testing Methodology -->
+        <div class="bg-[#1e293b] rounded-2xl p-8 md:p-12 border border-gray-800 mb-20">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Our Testing Methodology</h2>
+                <p class="text-lg text-gray-300 mb-12">
+                    We follow industry-standard methodologies to ensure comprehensive security assessments.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="ri-search-line text-2xl text-[#9655BD]"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Discovery</h3>
+                        <p class="text-gray-300">Information gathering and reconnaissance</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="ri-radar-line text-2xl text-[#9655BD]"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Scanning</h3>
+                        <p class="text-gray-300">Automated vulnerability identification</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="ri-sword-line text-2xl text-[#9655BD]"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Exploitation</h3>
+                        <p class="text-gray-300">Manual testing and validation</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="ri-file-text-line text-2xl text-[#9655BD]"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Reporting</h3>
+                        <p class="text-gray-300">Detailed findings and remediation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 bg-gradient-cyber relative">
+    <div class="absolute inset-0 bg-cyber-pattern opacity-10"></div>
+    <div class="container mx-auto px-4 md:px-6 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                Secure Your Applications Today
+            </h2>
+            <p class="text-xl text-gray-300 mb-10">
+                Don't wait for attackers to find your vulnerabilities. Let our experts identify and help fix them first.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="{% url 'contact' %}" class="bg-[#9655BD] hover:bg-[#8b5cf6] text-white font-medium px-8 py-4 rounded-lg transition-all text-lg">
+                    Schedule Assessment
+                </a>
+                <a href="{% url 'pricing' %}" class="bg-[#1e293b] hover:bg-[#0f172a] border border-gray-700 text-white font-medium px-8 py-4 rounded-lg transition-all text-lg">
+                    View Pricing
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
