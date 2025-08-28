@@ -4,3 +4,6 @@ crispy-tailwind>=1.0.3
 gunicorn>=21.2.0
 reportlab>=4.0.0
 reportlab
+pillow
+wagtail
+wagtail-modeladmin

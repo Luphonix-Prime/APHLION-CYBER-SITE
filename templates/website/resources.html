@@ -12,18 +12,18 @@
                 Access guides, whitepapers, and best practices to strengthen your security posture.
             </p>
         </div>
-        
+
         <!-- Featured Resource -->
         <div class="bg-gradient-cyber rounded-2xl overflow-hidden relative mb-16">
             <div class="absolute inset-0 bg-cyber-pattern opacity-10"></div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-8 md:p-12">
                 <div class="relative z-10">
-                    <span class="bg-[#9655BD]/20 text-[#9655BD] px-4 py-1 rounded-full text-sm font-medium mb-6 inline-block">Featured Whitepaper</span>
+                    <span class="bg-[#9655BD]/20 text-[#9655BD] px-4 py-1 rounded-full text-sm font-medium mb-6 inline-block">Featured Blog</span>
                     <h2 class="text-3xl md:text-4xl font-bold mb-4">2025 Cybersecurity Threat Landscape Report</h2>
                     <p class="text-lg text-gray-300 mb-6">
                         Our comprehensive analysis of emerging cybersecurity threats, attack vectors, and defensive strategies for the coming year.
                     </p>
-                    <a href="#" class="inline-flex items-center bg-[#9655BD] hover:bg-[#9655BD] text-white font-medium px-6 py-3 rounded-lg transition-colors">
+                    <a href="#" class="inline-flex items-center bg-[#9655BD] hover:bg-[#9655BD] text-white font-medium px-6 py-10 rounded-lg transition-colors">
                         Download Report
                         <i class="ri-download-line ml-2"></i>
                     </a>
@@ -37,19 +37,19 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Resource Categories -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <a href="#whitepapers" class="bg-[#1e293b] p-6 rounded-xl border border-gray-800 hover:border-[#9655BD]/30 transition-all flex items-center card-hover">
+            <a href="#blogs" class="bg-[#1e293b] p-6 rounded-xl border border-gray-800 hover:border-[#9655BD]/30 transition-all flex items-center card-hover">
                 <div class="w-12 h-12 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mr-4">
                     <i class="ri-file-text-line text-2xl text-[#9655BD]"></i>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold">Whitepapers</h3>
+                    <h3 class="text-xl font-bold">Blogs</h3>
                     <p class="text-gray-300">In-depth research and analysis</p>
                 </div>
             </a>
-            
+
             <a href="#guides" class="bg-[#1e293b] p-6 rounded-xl border border-gray-800 hover:border-[#9655BD]/30 transition-all flex items-center card-hover">
                 <div class="w-12 h-12 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mr-4">
                     <i class="ri-book-open-line text-2xl text-[#9655BD]"></i>
@@ -59,7 +59,7 @@
                     <p class="text-gray-300">Practical security implementations</p>
                 </div>
             </a>
-            
+
             <a href="#webinars" class="bg-[#1e293b] p-6 rounded-xl border border-gray-800 hover:border-[#9655BD]/30 transition-all flex items-center card-hover">
                 <div class="w-12 h-12 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mr-4">
                     <i class="ri-vidicon-line text-2xl text-[#9655BD]"></i>
@@ -70,71 +70,71 @@
                 </div>
             </a>
         </div>
-        
-        <!-- Whitepapers Section -->
-        <div id="whitepapers" class="mb-20">
+
+        <!-- Blogs Section -->
+        <div id="blogs" class="mb-20">
             <div class="flex justify-between items-center mb-8">
-                <h2 class="text-2xl md:text-3xl font-bold">Whitepapers</h2>
-                <a href="#" class="text-[#9655BD] hover:text-[#8b5cf6] flex items-center">
+                <h2 class="text-2xl md:text-3xl font-bold">Blogs</h2>
+                <a href="/blogs/" class="text-[#9655BD] hover:text-[#8b5cf6] flex items-center">
                     View all
                     <i class="ri-arrow-right-line ml-1"></i>
                 </a>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {% for blog in latest_blogs %}
                 <div class="bg-[#1e293b] rounded-xl overflow-hidden border border-gray-800 card-hover">
+                    {% if blog.featured_image %}
                     <img 
-                        src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300&q=80" 
-                        alt="Zero Trust Architecture" 
+                        src="{{ blog.featured_image.file.url }}" 
+                        alt="{{ blog.title }}" 
                         class="w-full h-40 object-cover"
                     />
+                    {% else %}
+                    <div class="w-full h-40 bg-gradient-to-br from-[#9655BD]/20 to-[#8b5cf6]/20 flex items-center justify-center">
+                        <i class="ri-article-line text-4xl text-[#9655BD]"></i>
+                    </div>
+                    {% endif %}
                     <div class="p-6">
-                        <span class="text-xs font-medium text-gray-400">Security Architecture</span>
-                        <h3 class="text-xl font-bold mb-2 mt-1">Implementing Zero Trust Architecture</h3>
-                        <p class="text-gray-300 mb-4">A comprehensive guide to implementing zero trust security models in modern enterprises.</p>
+                        <div class="flex items-center justify-between mb-3">
+                            {% if blog.tags.exists %}
+                            <span class="text-xs text-[#9655BD] font-medium bg-[#9655BD]/10 px-2 py-1 rounded">{{ blog.tags.first }}</span>
+                            {% endif %}
+                            <span class="text-xs text-gray-400">{{ blog.date|date:"M d, Y" }}</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">{{ blog.title }}</h3>
+                        <p class="text-gray-300 mb-4">{{ blog.intro|truncatewords:20 }}</p>
+                        <div class="flex items-center justify-between">
+                            <a href="{{ blog.url }}" class="inline-flex items-center text-[#9655BD] hover:text-[#8b5cf6] font-medium">
+                                Read more
+                                <i class="ri-arrow-right-line ml-2"></i>
+                            </a>
+                            <span class="text-xs text-gray-400">by {{ blog.author.get_full_name|default:blog.author.username }}</span>
+                        </div>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="bg-[#1e293b] rounded-xl overflow-hidden border border-gray-800 card-hover">
+                    <div class="w-full h-40 bg-gradient-to-br from-[#9655BD]/20 to-[#8b5cf6]/20 flex items-center justify-center">
+                        <i class="ri-article-line text-4xl text-[#9655BD]"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs text-[#9655BD] font-medium bg-[#9655BD]/10 px-2 py-1 rounded">Security Architecture</span>
+                            <span class="text-xs text-gray-400">Coming Soon</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Blog Posts Coming Soon</h3>
+                        <p class="text-gray-300 mb-4">We're working on exciting content about cybersecurity best practices and insights.</p>
                         <a href="#" class="inline-flex items-center text-[#9655BD] hover:text-[#8b5cf6] font-medium">
-                            Download PDF
-                            <i class="ri-download-line ml-2"></i>
+                            Learn more
+                            <i class="ri-arrow-right-line ml-2"></i>
                         </a>
                     </div>
                 </div>
-                
-                <div class="bg-[#1e293b] rounded-xl overflow-hidden border border-gray-800 card-hover">
-                    <img 
-                        src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300&q=80" 
-                        alt="Ransomware Defense" 
-                        class="w-full h-40 object-cover"
-                    />
-                    <div class="p-6">
-                        <span class="text-xs font-medium text-gray-400">Threat Defense</span>
-                        <h3 class="text-xl font-bold mb-2 mt-1">Advanced Ransomware Defense Strategies</h3>
-                        <p class="text-gray-300 mb-4">Learn how to protect your organization from increasingly sophisticated ransomware attacks.</p>
-                        <a href="#" class="inline-flex items-center text-[#9655BD] hover:text-[#8b5cf6] font-medium">
-                            Download PDF
-                            <i class="ri-download-line ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="bg-[#1e293b] rounded-xl overflow-hidden border border-gray-800 card-hover">
-                    <img 
-                        src="https://images.unsplash.com/photo-1593642533144-3d62aa4783ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300&q=80" 
-                        alt="Cloud Security" 
-                        class="w-full h-40 object-cover"
-                    />
-                    <div class="p-6">
-                        <span class="text-xs font-medium text-gray-400">Cloud Security</span>
-                        <h3 class="text-xl font-bold mb-2 mt-1">Securing Multi-Cloud Environments</h3>
-                        <p class="text-gray-300 mb-4">Best practices for maintaining security across multiple cloud providers and hybrid environments.</p>
-                        <a href="#" class="inline-flex items-center text-[#9655BD] hover:text-[#8b5cf6] font-medium">
-                            Download PDF
-                            <i class="ri-download-line ml-2"></i>
-                        </a>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
-        
+
         <!-- Guides Section -->
         <div id="guides" class="mb-20">
             <div class="flex justify-between items-center mb-8">
@@ -144,7 +144,7 @@
                     <i class="ri-arrow-right-line ml-1"></i>
                 </a>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="bg-[#1e293b] p-6 rounded-xl border border-gray-800 card-hover">
                     <div class="flex items-start">
@@ -161,7 +161,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="bg-[#1e293b] p-6 rounded-xl border border-gray-800 card-hover">
                     <div class="flex items-start">
                         <div class="w-12 h-12 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
@@ -177,7 +177,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="bg-[#1e293b] p-6 rounded-xl border border-gray-800 card-hover">
                     <div class="flex items-start">
                         <div class="w-12 h-12 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
@@ -193,7 +193,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="bg-[#1e293b] p-6 rounded-xl border border-gray-800 card-hover">
                     <div class="flex items-start">
                         <div class="w-12 h-12 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
@@ -211,86 +211,74 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Webinars Section -->
         <div id="webinars" class="mb-20">
             <div class="flex justify-between items-center mb-8">
                 <h2 class="text-2xl md:text-3xl font-bold">Webinars & Events</h2>
-                <a href="#" class="text-[#9655BD] hover:text-[#8b5cf6] flex items-center">
+                <a href="/webinars/" class="text-[#9655BD] hover:text-[#8b5cf6] flex items-center">
                     View all
                     <i class="ri-arrow-right-line ml-1"></i>
                 </a>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {% for webinar in latest_webinars %}
                 <div class="bg-[#1e293b] rounded-xl overflow-hidden border border-gray-800 card-hover">
                     <div class="relative">
+                        {% if webinar.featured_image %}
                         <img 
-                            src="https://images.unsplash.com/photo-1591115765373-5207764f72e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300&q=80" 
-                            alt="Webinar" 
+                            src="{{ webinar.featured_image.file.url }}" 
+                            alt="{{ webinar.title }}" 
                             class="w-full h-40 object-cover"
                         />
+                        {% else %}
+                        <div class="w-full h-40 bg-gradient-to-br from-[#9655BD]/20 to-[#8b5cf6]/20 flex items-center justify-center">
+                            <i class="ri-vidicon-line text-4xl text-[#9655BD]"></i>
+                        </div>
+                        {% endif %}
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0f0f0f] to-transparent opacity-70"></div>
-                        <div class="absolute bottom-3 left-3 bg-[#9655BD] text-white text-xs font-bold px-3 py-1 rounded">
-                            June 15, 2025
+                        <div class="absolute bottom-3 left-3 {% if webinar.status == 'live' %}bg-green-500{% elif webinar.status == 'upcoming' %}bg-[#9655BD]{% else %}bg-blue-500{% endif %} text-white text-xs font-bold px-3 py-1 rounded">
+                            {% if webinar.status == 'live' %}LIVE{% elif webinar.status == 'upcoming' %}{{ webinar.date|date:"M d, Y" }}{% else %}ON DEMAND{% endif %}
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">The Future of AI in Cybersecurity</h3>
-                        <p class="text-gray-300 mb-4">Join our expert panel as they discuss how artificial intelligence is transforming threat detection and response.</p>
-                        <a href="#" class="inline-flex items-center text-[#9655BD] hover:text-[#8b5cf6] font-medium">
-                            Register Now
+                        <h3 class="text-xl font-bold mb-2">{{ webinar.title }}</h3>
+                        <p class="text-gray-300 mb-4">{{ webinar.intro|truncatewords:20 }}</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs text-gray-400">{{ webinar.duration_minutes }} mins</span>
+                            <span class="text-xs text-gray-400">by {{ webinar.author.get_full_name|default:webinar.author.username }}</span>
+                        </div>
+                        <a href="{% if webinar.registration_link %}{{ webinar.registration_link }}{% else %}{{ webinar.url }}{% endif %}" class="inline-flex items-center text-[#9655BD] hover:text-[#8b5cf6] font-medium">
+                            {% if webinar.status == 'live' %}Join Live{% elif webinar.status == 'upcoming' %}Register Now{% else %}Watch Now{% endif %}
                             <i class="ri-arrow-right-line ml-2"></i>
                         </a>
                     </div>
                 </div>
-                
+                {% empty %}
                 <div class="bg-[#1e293b] rounded-xl overflow-hidden border border-gray-800 card-hover">
                     <div class="relative">
-                        <img 
-                            src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300&q=80" 
-                            alt="Workshop" 
-                            class="w-full h-40 object-cover"
-                        />
+                        <div class="w-full h-40 bg-gradient-to-br from-[#9655BD]/20 to-[#8b5cf6]/20 flex items-center justify-center">
+                            <i class="ri-vidicon-line text-4xl text-[#9655BD]"></i>
+                        </div>
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0f0f0f] to-transparent opacity-70"></div>
                         <div class="absolute bottom-3 left-3 bg-[#9655BD] text-white text-xs font-bold px-3 py-1 rounded">
-                            July 8, 2025
+                            Coming Soon
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Threat Hunting Workshop</h3>
-                        <p class="text-gray-300 mb-4">A hands-on workshop teaching advanced techniques for proactively hunting threats in your environment.</p>
+                        <h3 class="text-xl font-bold mb-2">Webinars Coming Soon</h3>
+                        <p class="text-gray-300 mb-4">We're preparing exciting webinars and events about the latest cybersecurity trends and technologies.</p>
                         <a href="#" class="inline-flex items-center text-[#9655BD] hover:text-[#8b5cf6] font-medium">
-                            Register Now
+                            Stay Tuned
                             <i class="ri-arrow-right-line ml-2"></i>
                         </a>
                     </div>
                 </div>
-                
-                <div class="bg-[#1e293b] rounded-xl overflow-hidden border border-gray-800 card-hover">
-                    <div class="relative">
-                        <img 
-                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300&q=80" 
-                            alt="Conference" 
-                            class="w-full h-40 object-cover"
-                        />
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#0f0f0f] to-transparent opacity-70"></div>
-                        <div class="absolute bottom-3 left-3 bg-[#9655BD] text-white text-xs font-bold px-3 py-1 rounded">
-                            August 22-24, 2025
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Aphelion Cyber Summit 2025</h3>
-                        <p class="text-gray-300 mb-4">Join the industry's top security professionals for three days of insights, networking, and hands-on workshops.</p>
-                        <a href="#" class="inline-flex items-center text-[#9655BD] hover:text-[#8b5cf6] font-medium">
-                            Learn More
-                            <i class="ri-arrow-right-line ml-2"></i>
-                        </a>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
-        
+
         <!-- Newsletter -->
         <!-- <div class="bg-[#1e293b] p-8 md:p-12 rounded-2xl border border-gray-800">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">

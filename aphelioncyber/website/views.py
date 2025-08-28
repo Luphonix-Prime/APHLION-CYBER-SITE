@@ -32,7 +32,17 @@ def pricing(request):
     return render(request, 'website/pricing.html')
 
 def resources(request):
-    return render(request, 'website/resources.html')
+    from aphelioncyber.blog.models import BlogPage, WebinarPage
+    
+    # Get latest blogs and webinars
+    latest_blogs = BlogPage.objects.live().order_by('-date')[:6]
+    latest_webinars = WebinarPage.objects.live().order_by('-date')[:6]
+    
+    context = {
+        'latest_blogs': latest_blogs,
+        'latest_webinars': latest_webinars,
+    }
+    return render(request, 'website/resources.html', context)
 
 def company(request):
     return render(request, 'website/company.html')
