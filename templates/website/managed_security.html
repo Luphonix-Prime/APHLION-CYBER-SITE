@@ -1,253 +1,299 @@
 
 {% extends 'base.html' %}
 
-{% block title %}Managed Security Services - Aphelion Cyber{% endblock %}
+{% block title %}Managed Security Services | Aphelion Cyber Security{% endblock %}
+{% block meta_description %}24/7 managed security services with expert monitoring, threat detection, and incident response to protect your organization.{% endblock %}
 
 {% block content %}
-<!-- Hero Section -->
-<section class="relative pt-32 pb-16 overflow-hidden">
-    <div class="absolute inset-0 bg-cyber-pattern opacity-30"></div>
-    <div class="container mx-auto px-4 md:px-6 relative z-10">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-                🛡️ <span class="text-gradient">Managed Security Services</span>
-            </h1>
-            <p class="text-xl text-gray-300 mb-8">
-                Comprehensive 24/7 security operations and threat management to protect your organization from evolving cyber threats.
-            </p>
+<div class="min-h-screen bg-gradient-to-br from-[#0f0f0f] via-[#1a1a1a] to-[#0f0f0f]">
+    <!-- Hero Section -->
+    <section class="relative py-20 overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-[#9655BD] to-[#C084FC] bg-clip-text text-transparent">
+                    Managed Security Services
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+                    24/7 expert monitoring, threat detection, and incident response to safeguard your digital infrastructure
+                </p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Services Grid -->
-<section class="py-20">
-    <div class="container mx-auto px-4 md:px-6">
-        <!-- Incident Response -->
-        <div class="mb-20">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <!-- Service Overview -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
                 <div>
-                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mb-6">
-                        <i class="ri-alarm-warning-line text-3xl text-[#9655BD]"></i>
-                    </div>
-                    <h2 class="text-3xl font-bold mb-6">Incident Response</h2>
-                    <p class="text-lg text-gray-300 mb-6">
-                        Helps organizations detect, respond to, and recover from cybersecurity incidents with rapid deployment and expert analysis.
+                    <h2 class="text-4xl font-bold mb-8 text-white">Complete Security Operations</h2>
+                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                        Our managed security services provide round-the-clock protection with a team of certified security experts monitoring your infrastructure. We combine advanced threat intelligence, AI-powered detection, and human expertise to deliver comprehensive security coverage.
                     </p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">24/7 incident detection and response</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Forensic analysis and evidence preservation</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Business continuity and recovery planning</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Post-incident reporting and recommendations</span>
-                        </li>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="ri-shield-check-line text-[#9655BD] text-2xl mr-4"></i>
+                            <span class="text-white">24/7/365 Security Operations Center</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="ri-eye-line text-[#9655BD] text-2xl mr-4"></i>
+                            <span class="text-white">Real-time Threat Monitoring</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="ri-alarm-warning-line text-[#9655BD] text-2xl mr-4"></i>
+                            <span class="text-white">Incident Response & Remediation</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="ri-bar-chart-line text-[#9655BD] text-2xl mr-4"></i>
+                            <span class="text-white">Detailed Security Reporting</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-[#9655BD]/20 to-[#C084FC]/10 rounded-2xl p-8 border border-[#9655BD]/20">
+                    <div class="text-center">
+                        <i class="ri-shield-star-line text-6xl text-[#9655BD] mb-6"></i>
+                        <h3 class="text-2xl font-bold text-white mb-4">Enterprise-Grade Protection</h3>
+                        <p class="text-gray-300 mb-6">Advanced security monitoring with AI-powered threat detection and expert analysis</p>
+                        <div class="grid grid-cols-2 gap-4 text-center">
+                            <div class="bg-[#1e293b]/50 rounded-lg p-4">
+                                <div class="text-2xl font-bold text-[#9655BD]">99.9%</div>
+                                <div class="text-sm text-gray-400">Uptime SLA</div>
+                            </div>
+                            <div class="bg-[#1e293b]/50 rounded-lg p-4">
+                                <div class="text-2xl font-bold text-[#9655BD]">&lt;5min</div>
+                                <div class="text-sm text-gray-400">Response Time</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services -->
+    <section class="py-20 bg-[#0a0a0a]/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6 text-white">Our Managed Security Services</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Comprehensive security solutions tailored to your organization's needs</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- SIEM Management -->
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="mb-6">
+                        <i class="ri-dashboard-3-line text-4xl text-[#9655BD] mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">SIEM Management</h3>
+                        <p class="text-gray-300 leading-relaxed">Advanced security information and event management with custom correlation rules and threat intelligence integration.</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Log aggregation & analysis</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Custom correlation rules</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Threat intelligence feeds</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Real-time alerting</li>
                     </ul>
-                    <a href="{% url 'incident_response' %}" class="inline-flex items-center text-[#9655BD] hover:text-[#8b5cf6] transition-colors font-medium text-lg">
-                        Learn More About Incident Response
-                        <i class="ri-arrow-right-line ml-2"></i>
+                </div>
+
+                <!-- Vulnerability Management -->
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="mb-6">
+                        <i class="ri-bug-line text-4xl text-[#9655BD] mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Vulnerability Management</h3>
+                        <p class="text-gray-300 leading-relaxed">Continuous vulnerability scanning, assessment, and prioritized remediation guidance for your infrastructure.</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Automated scanning</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Risk prioritization</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Patch management</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Compliance tracking</li>
+                    </ul>
+                </div>
+
+                <!-- Threat Hunting -->
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="mb-6">
+                        <i class="ri-search-eye-line text-4xl text-[#9655BD] mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Threat Hunting</h3>
+                        <p class="text-gray-300 leading-relaxed">Proactive threat hunting using advanced analytics and behavioral analysis to identify hidden threats.</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Behavioral analysis</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Advanced persistent threats</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>IOC development</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Threat attribution</li>
+                    </ul>
+                </div>
+
+                <!-- Incident Response -->
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="mb-6">
+                        <i class="ri-alarm-warning-line text-4xl text-[#9655BD] mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Incident Response</h3>
+                        <p class="text-gray-300 leading-relaxed">Rapid incident response and forensic analysis to minimize impact and accelerate recovery.</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>24/7 response team</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Digital forensics</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Containment strategies</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Recovery planning</li>
+                    </ul>
+                </div>
+
+                <!-- Compliance Monitoring -->
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="mb-6">
+                        <i class="ri-file-shield-line text-4xl text-[#9655BD] mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Compliance Monitoring</h3>
+                        <p class="text-gray-300 leading-relaxed">Continuous compliance monitoring and reporting for various regulatory frameworks and standards.</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>SOC 2 compliance</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>ISO 27001 monitoring</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>GDPR compliance</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Automated reporting</li>
+                    </ul>
+                </div>
+
+                <!-- Cloud Security -->
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="mb-6">
+                        <i class="ri-cloud-line text-4xl text-[#9655BD] mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Cloud Security</h3>
+                        <p class="text-gray-300 leading-relaxed">Comprehensive cloud security monitoring across AWS, Azure, and GCP environments.</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Multi-cloud monitoring</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Container security</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>API security</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>DevSecOps integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6 text-white">Advanced Security Technology</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Enterprise-grade security tools and platforms</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-[#1e293b]/50 p-6 rounded-xl border border-gray-800 text-center">
+                    <i class="ri-shield-keyhole-line text-3xl text-[#9655BD] mb-4"></i>
+                    <h4 class="font-bold text-white mb-2">SIEM Platforms</h4>
+                    <p class="text-sm text-gray-400">Splunk, QRadar, ArcSight</p>
+                </div>
+                <div class="bg-[#1e293b]/50 p-6 rounded-xl border border-gray-800 text-center">
+                    <i class="ri-virus-line text-3xl text-[#9655BD] mb-4"></i>
+                    <h4 class="font-bold text-white mb-2">EDR Solutions</h4>
+                    <p class="text-sm text-gray-400">CrowdStrike, SentinelOne</p>
+                </div>
+                <div class="bg-[#1e293b]/50 p-6 rounded-xl border border-gray-800 text-center">
+                    <i class="ri-scan-line text-3xl text-[#9655BD] mb-4"></i>
+                    <h4 class="font-bold text-white mb-2">Vulnerability Scanners</h4>
+                    <p class="text-sm text-gray-400">Nessus, Qualys, Rapid7</p>
+                </div>
+                <div class="bg-[#1e293b]/50 p-6 rounded-xl border border-gray-800 text-center">
+                    <i class="ri-brain-line text-3xl text-[#9655BD] mb-4"></i>
+                    <h4 class="font-bold text-white mb-2">AI/ML Analytics</h4>
+                    <p class="text-sm text-gray-400">Custom ML models</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Tiers -->
+    <section class="py-20 bg-[#0a0a0a]/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6 text-white">Service Tiers</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Choose the right level of managed security for your organization</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Essential -->
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">Essential</h3>
+                        <p class="text-gray-400 mb-4">Basic 24/7 monitoring</p>
+                        <div class="text-3xl font-bold text-[#9655BD]">$5,000<span class="text-lg text-gray-400">/month</span></div>
+                    </div>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-3"></i>24/7 SIEM monitoring</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-3"></i>Basic incident response</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-3"></i>Monthly reports</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-3"></i>Email/phone support</li>
+                    </ul>
+                </div>
+
+                <!-- Professional -->
+                <div class="bg-gradient-to-b from-[#9655BD]/20 to-[#1e293b] p-8 rounded-xl border border-[#9655BD]/50 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-[#9655BD] text-white px-4 py-1 rounded-full text-sm font-medium">Most Popular</span>
+                    </div>
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">Professional</h3>
+                        <p class="text-gray-400 mb-4">Advanced threat detection</p>
+                        <div class="text-3xl font-bold text-[#9655BD]">$10,000<span class="text-lg text-gray-400">/month</span></div>
+                    </div>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-3"></i>Everything in Essential</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-3"></i>Threat hunting</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-3"></i>Vulnerability management</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-3"></i>Weekly reports</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-3"></i>Dedicated analyst</li>
+                    </ul>
+                </div>
+
+                <!-- Enterprise -->
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">Enterprise</h3>
+                        <p class="text-gray-400 mb-4">Complete security operations</p>
+                        <div class="text-3xl font-bold text-[#9655BD]">Custom<span class="text-lg text-gray-400"> pricing</span></div>
+                    </div>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-3"></i>Everything in Professional</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-3"></i>Custom integrations</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-3"></i>On-site support</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-3"></i>Real-time reporting</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-3"></i>Dedicated team</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="bg-gradient-to-r from-[#9655BD]/20 to-[#C084FC]/10 rounded-2xl p-12 text-center border border-[#9655BD]/20">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Ready to Secure Your Organization?</h2>
+                <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Get comprehensive managed security services with 24/7 monitoring and expert incident response.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="{% url 'contact' %}" class="bg-[#9655BD] hover:bg-[#9655BD]/80 text-white font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105">
+                        Get Started Today
+                    </a>
+                    <a href="{% url 'pricing' %}" class="border border-[#9655BD] text-[#9655BD] hover:bg-[#9655BD] hover:text-white font-bold py-3 px-8 rounded-lg transition-all">
+                        View Pricing
                     </a>
                 </div>
-                <div class="relative">
-                    <img 
-                        src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80" 
-                        alt="Incident Response" 
-                        class="rounded-2xl shadow-2xl border border-gray-700"
-                    />
-                </div>
             </div>
         </div>
+    </section>
+</div>
 
-        <!-- Deep Web Monitoring -->
-        <div class="mb-20">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="order-2 lg:order-1 relative">
-                    <img 
-                        src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80" 
-                        alt="Deep Web Monitoring" 
-                        class="rounded-2xl shadow-2xl border border-gray-700"
-                    />
-                </div>
-                <div class="order-1 lg:order-2">
-                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mb-6">
-                        <i class="ri-eye-line text-3xl text-[#9655BD]"></i>
-                    </div>
-                    <h2 class="text-3xl font-bold mb-6">Deep Web Monitoring</h2>
-                    <p class="text-lg text-gray-300 mb-6">
-                        Covert monitoring for underground threat activity to identify potential threats before they impact your organization.
-                    </p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Dark web threat intelligence gathering</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Stolen credential monitoring</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Brand and reputation monitoring</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Underground marketplace surveillance</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Security Operations Center (SOC) -->
-        <div class="mb-20">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mb-6">
-                        <i class="ri-shield-check-line text-3xl text-[#9655BD]"></i>
-                    </div>
-                    <h2 class="text-3xl font-bold mb-6">Security Operations Center (SOC)</h2>
-                    <p class="text-lg text-gray-300 mb-6">
-                        24/7 centralized threat detection and response with expert security analysts monitoring your infrastructure around the clock.
-                    </p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Continuous security monitoring</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Real-time threat detection and analysis</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Automated incident response workflows</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Expert security analyst support</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="relative">
-                    <img 
-                        src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80" 
-                        alt="Security Operations Center" 
-                        class="rounded-2xl shadow-2xl border border-gray-700"
-                    />
-                </div>
-            </div>
-        </div>
-
-        <!-- Identity & Access Management -->
-        <div class="mb-20">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="order-2 lg:order-1 relative">
-                    <img 
-                        src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80" 
-                        alt="Identity & Access Management" 
-                        class="rounded-2xl shadow-2xl border border-gray-700"
-                    />
-                </div>
-                <div class="order-1 lg:order-2">
-                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mb-6">
-                        <i class="ri-user-settings-line text-3xl text-[#9655BD]"></i>
-                    </div>
-                    <h2 class="text-3xl font-bold mb-6">Identity & Access Management</h2>
-                    <p class="text-lg text-gray-300 mb-6">
-                        Managing user identities and permissions with comprehensive access controls and authentication systems.
-                    </p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Multi-factor authentication implementation</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Role-based access control (RBAC)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Single sign-on (SSO) solutions</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Privileged access management</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Third Party Risk Management -->
-        <div class="mb-20">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mb-6">
-                        <i class="ri-building-line text-3xl text-[#9655BD]"></i>
-                    </div>
-                    <h2 class="text-3xl font-bold mb-6">Third Party Risk Management</h2>
-                    <p class="text-lg text-gray-300 mb-6">
-                        Vendor risk assessment framework to evaluate and monitor the security posture of your third-party partners and suppliers.
-                    </p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Vendor security assessments</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Supply chain risk analysis</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Continuous vendor monitoring</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Risk scoring and reporting</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="relative">
-                    <img 
-                        src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80" 
-                        alt="Third Party Risk Management" 
-                        class="rounded-2xl shadow-2xl border border-gray-700"
-                    />
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CTA Section -->
-<section class="py-20 bg-gradient-cyber relative">
-    <div class="absolute inset-0 bg-cyber-pattern opacity-10"></div>
-    <div class="container mx-auto px-4 md:px-6 relative z-10">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                Ready to Enhance Your Security Operations?
-            </h2>
-            <p class="text-xl text-gray-300 mb-10">
-                Our managed security services provide comprehensive protection with expert oversight and 24/7 monitoring.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="{% url 'contact' %}" class="bg-[#9655BD] hover:bg-[#8b5cf6] text-white font-medium px-8 py-4 rounded-lg transition-all text-lg">
-                    Get Started Today
-                </a>
-                <a href="{% url 'pricing' %}" class="bg-[#1e293b] hover:bg-[#0f172a] border border-gray-700 text-white font-medium px-8 py-4 rounded-lg transition-all text-lg">
-                    View Pricing
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+<style>
+.card-hover {
+    transition: all 0.3s ease;
+}
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(150, 85, 189, 0.1);
+}
+</style>
 {% endblock %}

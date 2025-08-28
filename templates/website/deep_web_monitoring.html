@@ -14,97 +14,445 @@
                     <span class="text-[#9655BD] font-medium">Deep Web Monitoring</span>
                 </div>
                 <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                    Covert Monitoring for
-                    <span class="text-gradient">Underground Threat Activity</span>
+                    Advanced <span class="text-gradient">Deep Web</span>
+                    Monitoring
                 </h1>
                 <p class="text-xl text-gray-300 mb-8 leading-relaxed">
-                    Stay ahead of cyber threats with our comprehensive deep web and dark web monitoring services. We track underground threat activity targeting your organization.
+                    Continuous monitoring of the dark web and deep web to detect threats, data breaches, and criminal activities targeting your organization.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="{% url 'contact' %}" class="bg-[#9655BD] hover:bg-[#9655BD]/80 text-white font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105">
-                        Get Started
+                    <a href="#services" class="btn-primary">
+                        <i class="ri-search-eye-line mr-2"></i>
+                        Explore Services
                     </a>
-                    <a href="#features" class="border border-gray-600 hover:border-[#9655BD] text-white font-medium py-3 px-8 rounded-lg transition-all">
-                        Learn More
+                    <a href="#demo" class="btn-secondary">
+                        <i class="ri-play-circle-line mr-2"></i>
+                        Request Demo
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Key Features Section -->
-    <section id="features" class="py-20 bg-[#0f0f0f]/50">
+    <!-- Hero Image -->
+    <section class="pb-20">
         <div class="container mx-auto px-4 md:px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">Comprehensive Deep Web Intelligence</h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    Our advanced monitoring capabilities provide early warning of threats targeting your organization
+            <div class="relative max-w-5xl mx-auto">
+                <img 
+                    src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600&q=80" 
+                    alt="Deep web monitoring and threat intelligence" 
+                    class="rounded-2xl shadow-2xl border border-gray-700 w-full"
+                />
+                <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-[#9655BD]/20 rounded-full blur-3xl"></div>
+                <div class="absolute -top-6 -right-6 w-40 h-40 bg-[#8b5cf6]/20 rounded-full blur-3xl"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Deep Web Monitoring -->
+    <section id="overview" class="py-20 bg-[#0f172a]/50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                        What is <span class="text-gradient">Deep Web Monitoring?</span>
+                    </h2>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Deep Web Monitoring is the continuous surveillance of hidden internet layers including the dark web, deep web forums, marketplaces, and underground networks where cybercriminals operate. Our advanced monitoring systems detect threats, stolen data, and malicious activities targeting your organization before they impact your business.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="ri-search-2-line text-[#9655BD] text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="text-white font-semibold mb-1">Comprehensive Coverage</h4>
+                                <p class="text-gray-400 text-sm">Monitor millions of dark web sources and underground forums</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="ri-alarm-warning-line text-[#9655BD] text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="text-white font-semibold mb-1">Real-time Alerts</h4>
+                                <p class="text-gray-400 text-sm">Immediate notifications when your data appears on dark markets</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="ri-shield-keyhole-line text-[#9655BD] text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="text-white font-semibold mb-1">Threat Intelligence</h4>
+                                <p class="text-gray-400 text-sm">Actionable intelligence on emerging threats and attack vectors</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img 
+                        src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" 
+                        alt="Dark web monitoring dashboard" 
+                        class="rounded-xl shadow-xl border border-gray-700"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monitoring Areas -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    What We <span class="text-gradient">Monitor</span>
+                </h2>
+                <p class="text-gray-300 leading-relaxed">
+                    Our comprehensive monitoring covers all major dark web platforms, forums, and marketplaces where threats to your organization may emerge.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
-                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mb-6">
-                        <i class="ri-search-line text-2xl text-[#9655BD]"></i>
+                <!-- Dark Web Marketplaces -->
+                <div class="bg-[#1e293b] border border-gray-700 rounded-xl p-6 hover:border-[#9655BD]/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mb-4">
+                        <i class="ri-store-3-line text-[#9655BD] text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Dark Web Surveillance</h3>
-                    <p class="text-gray-300">Continuous monitoring of dark web forums, marketplaces, and communication channels for threats against your organization.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Dark Web Marketplaces</h3>
+                    <p class="text-gray-300 text-sm mb-4">
+                        Monitor underground marketplaces where stolen credentials, corporate data, and malware are traded.
+                    </p>
+                    <ul class="text-gray-400 text-xs space-y-1">
+                        <li>• Credential Markets</li>
+                        <li>• Data Brokers</li>
+                        <li>• Malware-as-a-Service</li>
+                        <li>• Ransomware Groups</li>
+                    </ul>
                 </div>
 
-                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
-                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mb-6">
-                        <i class="ri-database-line text-2xl text-[#9655BD]"></i>
+                <!-- Hacker Forums -->
+                <div class="bg-[#1e293b] border border-gray-700 rounded-xl p-6 hover:border-[#9655BD]/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mb-4">
+                        <i class="ri-discuss-line text-[#9655BD] text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Data Breach Detection</h3>
-                    <p class="text-gray-300">Early detection of compromised credentials, leaked data, and stolen intellectual property on underground networks.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Hacker Forums</h3>
+                    <p class="text-gray-300 text-sm mb-4">
+                        Track discussions and mentions of your organization in cybercriminal communities and forums.
+                    </p>
+                    <ul class="text-gray-400 text-xs space-y-1">
+                        <li>• Threat Actor Communications</li>
+                        <li>• Attack Planning Discussions</li>
+                        <li>• Vulnerability Trading</li>
+                        <li>• Target Selection Chatter</li>
+                    </ul>
                 </div>
 
-                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
-                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mb-6">
-                        <i class="ri-alarm-warning-line text-2xl text-[#9655BD]"></i>
+                <!-- Paste Sites -->
+                <div class="bg-[#1e293b] border border-gray-700 rounded-xl p-6 hover:border-[#9655BD]/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mb-4">
+                        <i class="ri-file-copy-line text-[#9655BD] text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Threat Intelligence</h3>
-                    <p class="text-gray-300">Real-time alerts and actionable intelligence about emerging threats and attack campaigns targeting your industry.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Paste Sites & Leaks</h3>
+                    <p class="text-gray-300 text-sm mb-4">
+                        Monitor data dump sites and paste platforms for exposed corporate information and credentials.
+                    </p>
+                    <ul class="text-gray-400 text-xs space-y-1">
+                        <li>• Data Breach Dumps</li>
+                        <li>• Credential Leaks</li>
+                        <li>• Source Code Exposure</li>
+                        <li>• Configuration Files</li>
+                    </ul>
                 </div>
 
-                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
-                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mb-6">
-                        <i class="ri-user-search-line text-2xl text-[#9655BD]"></i>
+                <!-- Social Media -->
+                <div class="bg-[#1e293b] border border-gray-700 rounded-xl p-6 hover:border-[#9655BD]/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mb-4">
+                        <i class="ri-chat-3-line text-[#9655BD] text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Executive Protection</h3>
-                    <p class="text-gray-300">Monitoring for threats against key personnel, executives, and high-profile individuals within your organization.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Underground Social Media</h3>
+                    <p class="text-gray-300 text-sm mb-4">
+                        Track mentions and threats across encrypted communication platforms and underground social networks.
+                    </p>
+                    <ul class="text-gray-400 text-xs space-y-1">
+                        <li>• Encrypted Chat Groups</li>
+                        <li>• Anonymous Social Platforms</li>
+                        <li>• Underground Communities</li>
+                        <li>• Threat Actor Networks</li>
+                    </ul>
                 </div>
 
-                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
-                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mb-6">
-                        <i class="ri-shield-check-line text-2xl text-[#9655BD]"></i>
+                <!-- Code Repositories -->
+                <div class="bg-[#1e293b] border border-gray-700 rounded-xl p-6 hover:border-[#9655BD]/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mb-4">
+                        <i class="ri-code-box-line text-[#9655BD] text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Brand Protection</h3>
-                    <p class="text-gray-300">Detection of brand impersonation, fraudulent domains, and unauthorized use of corporate assets.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Code Repositories</h3>
+                    <p class="text-gray-300 text-sm mb-4">
+                        Monitor underground code repositories for malware, exploits, and tools targeting your infrastructure.
+                    </p>
+                    <ul class="text-gray-400 text-xs space-y-1">
+                        <li>• Exploit Code</li>
+                        <li>• Malware Samples</li>
+                        <li>• Attack Tools</li>
+                        <li>• Custom Scripts</li>
+                    </ul>
                 </div>
 
-                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
-                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mb-6">
-                        <i class="ri-file-text-line text-2xl text-[#9655BD]"></i>
+                <!-- Financial Networks -->
+                <div class="bg-[#1e293b] border border-gray-700 rounded-xl p-6 hover:border-[#9655BD]/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mb-4">
+                        <i class="ri-coin-line text-[#9655BD] text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Detailed Reporting</h3>
-                    <p class="text-gray-300">Comprehensive reports with context, risk assessment, and actionable recommendations for threat mitigation.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Financial Networks</h3>
+                    <p class="text-gray-300 text-sm mb-4">
+                        Track financial crimes, money laundering, and cryptocurrency transactions related to your organization.
+                    </p>
+                    <ul class="text-gray-400 text-xs space-y-1">
+                        <li>• Cryptocurrency Tracking</li>
+                        <li>• Payment Card Data</li>
+                        <li>• Financial Fraud Networks</li>
+                        <li>• Money Laundering Schemes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section id="services" class="py-20 bg-[#0f172a]/50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    Advanced <span class="text-gradient">Monitoring Features</span>
+                </h2>
+                <p class="text-gray-300 leading-relaxed">
+                    Our deep web monitoring platform leverages cutting-edge technology and human intelligence to provide comprehensive threat visibility.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <img 
+                        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" 
+                        alt="AI-powered threat detection" 
+                        class="rounded-xl shadow-xl border border-gray-700"
+                    />
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">AI-Powered Detection</h3>
+                    <p class="text-gray-300 mb-6">
+                        Advanced machine learning algorithms analyze patterns, identify threats, and filter false positives to deliver actionable intelligence.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="ri-checkbox-circle-line text-[#9655BD] mr-3"></i>
+                            <span class="text-gray-300">Natural Language Processing</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="ri-checkbox-circle-line text-[#9655BD] mr-3"></i>
+                            <span class="text-gray-300">Pattern Recognition</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="ri-checkbox-circle-line text-[#9655BD] mr-3"></i>
+                            <span class="text-gray-300">Behavioral Analysis</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="ri-checkbox-circle-line text-[#9655BD] mr-3"></i>
+                            <span class="text-gray-300">Automated Threat Scoring</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <div class="order-2 lg:order-1">
+                    <h3 class="text-2xl font-bold text-white mb-4">Real-time Intelligence</h3>
+                    <p class="text-gray-300 mb-6">
+                        Continuous monitoring with instant alerts when your organization's assets, data, or personnel are mentioned in underground networks.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="ri-checkbox-circle-line text-[#9655BD] mr-3"></i>
+                            <span class="text-gray-300">24/7 Automated Scanning</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="ri-checkbox-circle-line text-[#9655BD] mr-3"></i>
+                            <span class="text-gray-300">Instant Alert Notifications</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="ri-checkbox-circle-line text-[#9655BD] mr-3"></i>
+                            <span class="text-gray-300">Priority-based Escalation</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="ri-checkbox-circle-line text-[#9655BD] mr-3"></i>
+                            <span class="text-gray-300">Multi-channel Delivery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <img 
+                        src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" 
+                        alt="Real-time monitoring dashboard" 
+                        class="rounded-xl shadow-xl border border-gray-700"
+                    />
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img 
+                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" 
+                        alt="Threat intelligence reporting" 
+                        class="rounded-xl shadow-xl border border-gray-700"
+                    />
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Actionable Intelligence</h3>
+                    <p class="text-gray-300 mb-6">
+                        Transform raw data into actionable intelligence with detailed reports, risk assessments, and remediation recommendations.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="ri-checkbox-circle-line text-[#9655BD] mr-3"></i>
+                            <span class="text-gray-300">Detailed Threat Reports</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="ri-checkbox-circle-line text-[#9655BD] mr-3"></i>
+                            <span class="text-gray-300">Risk Impact Analysis</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="ri-checkbox-circle-line text-[#9655BD] mr-3"></i>
+                            <span class="text-gray-300">Remediation Guidance</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="ri-checkbox-circle-line text-[#9655BD] mr-3"></i>
+                            <span class="text-gray-300">Executive Summaries</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    Why Choose Our <span class="text-gradient">Deep Web Monitoring?</span>
+                </h2>
+                <p class="text-gray-300 leading-relaxed">
+                    Stay ahead of cyber threats with the most comprehensive deep web monitoring solution available.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-global-line text-[#9655BD] text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Global Coverage</h3>
+                    <p class="text-gray-400 text-sm">Monitor thousands of dark web sources worldwide</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-brain-line text-[#9655BD] text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">AI-Enhanced</h3>
+                    <p class="text-gray-400 text-sm">Machine learning for accurate threat detection</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-shield-user-line text-[#9655BD] text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Expert Analysis</h3>
+                    <p class="text-gray-400 text-sm">Human intelligence validates and enriches findings</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-speed-line text-[#9655BD] text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Rapid Response</h3>
+                    <p class="text-gray-400 text-sm">Real-time alerts for immediate action</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="py-20 bg-[#0f172a]/50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    Real-world <span class="text-gradient">Use Cases</span>
+                </h2>
+                <p class="text-gray-300 leading-relaxed">
+                    Discover how organizations leverage our deep web monitoring to protect their assets and reputation.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-[#1e293b] border border-gray-700 rounded-xl p-6">
+                    <i class="ri-lock-unlock-line text-[#9655BD] text-2xl mb-4"></i>
+                    <h3 class="text-lg font-bold text-white mb-3">Data Breach Detection</h3>
+                    <p class="text-gray-400 text-sm">
+                        Early detection of data breaches when your organization's data appears on underground markets, enabling rapid response and mitigation.
+                    </p>
+                </div>
+                <div class="bg-[#1e293b] border border-gray-700 rounded-xl p-6">
+                    <i class="ri-user-forbid-line text-[#9655BD] text-2xl mb-4"></i>
+                    <h3 class="text-lg font-bold text-white mb-3">Employee Monitoring</h3>
+                    <p class="text-gray-400 text-sm">
+                        Monitor for compromised employee credentials and insider threat indicators across dark web platforms and forums.
+                    </p>
+                </div>
+                <div class="bg-[#1e293b] border border-gray-700 rounded-xl p-6">
+                    <i class="ri-building-2-line text-[#9655BD] text-2xl mb-4"></i>
+                    <h3 class="text-lg font-bold text-white mb-3">Brand Protection</h3>
+                    <p class="text-gray-400 text-sm">
+                        Protect your brand reputation by monitoring for counterfeit products, trademark infringement, and brand abuse on dark markets.
+                    </p>
+                </div>
+                <div class="bg-[#1e293b] border border-gray-700 rounded-xl p-6">
+                    <i class="ri-bug-line text-[#9655BD] text-2xl mb-4"></i>
+                    <h3 class="text-lg font-bold text-white mb-3">Vulnerability Intelligence</h3>
+                    <p class="text-gray-400 text-sm">
+                        Stay ahead of zero-day exploits and vulnerabilities being discussed or traded in underground communities.
+                    </p>
+                </div>
+                <div class="bg-[#1e293b] border border-gray-700 rounded-xl p-6">
+                    <i class="ri-criminal-line text-[#9655BD] text-2xl mb-4"></i>
+                    <h3 class="text-lg font-bold text-white mb-3">Threat Actor Tracking</h3>
+                    <p class="text-gray-400 text-sm">
+                        Track specific threat actors and ransomware groups that may be targeting your industry or organization.
+                    </p>
+                </div>
+                <div class="bg-[#1e293b] border border-gray-700 rounded-xl p-6">
+                    <i class="ri-shield-star-line text-[#9655BD] text-2xl mb-4"></i>
+                    <h3 class="text-lg font-bold text-white mb-3">Third-party Risk</h3>
+                    <p class="text-gray-400 text-sm">
+                        Monitor your supply chain and vendor ecosystem for compromised partners that could impact your security posture.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20">
+    <section id="demo" class="py-20 bg-[#9655BD]">
         <div class="container mx-auto px-4 md:px-6">
-            <div class="bg-gradient-to-r from-[#9655BD]/20 to-[#9655BD]/10 rounded-2xl p-12 text-center border border-[#9655BD]/20">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">Protect Your Organization from Underground Threats</h2>
-                <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                    Don't wait for threats to surface. Get proactive deep web monitoring today.
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                    Start Monitoring the Deep Web Today
+                </h2>
+                <p class="text-xl text-purple-100 mb-8">
+                    Don't wait for threats to surface. Start monitoring the deep web and dark web for threats targeting your organization.
                 </p>
-                <a href="{% url 'contact' %}" class="bg-[#9655BD] hover:bg-[#9655BD]/80 text-white font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105">
-                    Start Monitoring
-                </a>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/contact/" class="bg-white text-[#9655BD] px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center">
+                        <i class="ri-play-circle-line mr-2"></i>
+                        Request Demo
+                    </a>
+                    <a href="/contact/" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-[#9655BD] transition-colors duration-200 flex items-center justify-center">
+                        <i class="ri-message-3-line mr-2"></i>
+                        Contact Sales
+                    </a>
+                </div>
             </div>
         </div>
     </section>

@@ -1,279 +1,324 @@
 
 {% extends 'base.html' %}
 
-{% block title %}Cyber Defense Services - Aphelion Cyber{% endblock %}
+{% block title %}Cyber Defense | Aphelion Cyber Security{% endblock %}
+{% block meta_description %}Advanced cyber defense solutions including endpoint protection, network security, and threat intelligence to protect your organization.{% endblock %}
 
 {% block content %}
-<!-- Hero Section -->
-<section class="relative pt-32 pb-16 overflow-hidden">
-    <div class="absolute inset-0 bg-cyber-pattern opacity-30"></div>
-    <div class="container mx-auto px-4 md:px-6 relative z-10">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-                🛡️ <span class="text-gradient">Cyber Defense</span>
-            </h1>
-            <p class="text-xl text-gray-300 mb-8">
-                Advanced penetration testing and vulnerability assessment services to identify and remediate security weaknesses before attackers exploit them.
-            </p>
+<div class="min-h-screen bg-gradient-to-br from-[#0f0f0f] via-[#1a1a1a] to-[#0f0f0f]">
+    <!-- Hero Section -->
+    <section class="relative py-20 overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-[#9655BD] to-[#C084FC] bg-clip-text text-transparent">
+                    Cyber Defense
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+                    Multi-layered security architecture designed to prevent, detect, and respond to advanced cyber threats
+                </p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Services Grid -->
-<section class="py-20">
-    <div class="container mx-auto px-4 md:px-6">
-        <!-- VAPT Service -->
-        <div class="mb-20">
+    <!-- Defense Strategy Overview -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+                <div>
+                    <h2 class="text-4xl font-bold mb-8 text-white">Defense in Depth Strategy</h2>
+                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                        Our cyber defense approach implements multiple layers of security controls, creating a robust defense ecosystem that can withstand sophisticated attacks. We combine preventive, detective, and responsive controls to ensure comprehensive protection.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-[#9655BD]/20 rounded-full p-3 mr-4 mt-1">
+                                <i class="ri-shield-check-line text-[#9655BD] text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold mb-2">Preventive Controls</h4>
+                                <p class="text-gray-400 text-sm">Firewalls, access controls, and endpoint protection to block threats before they enter</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-[#9655BD]/20 rounded-full p-3 mr-4 mt-1">
+                                <i class="ri-eye-line text-[#9655BD] text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold mb-2">Detective Controls</h4>
+                                <p class="text-gray-400 text-sm">Continuous monitoring and threat detection to identify potential breaches</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-[#9655BD]/20 rounded-full p-3 mr-4 mt-1">
+                                <i class="ri-alarm-warning-line text-[#9655BD] text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold mb-2">Responsive Controls</h4>
+                                <p class="text-gray-400 text-sm">Automated response and incident management to minimize impact</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-[#9655BD]/20 to-[#C084FC]/10 rounded-2xl p-8 border border-[#9655BD]/20">
+                    <div class="text-center">
+                        <i class="ri-shield-star-line text-6xl text-[#9655BD] mb-6"></i>
+                        <h3 class="text-2xl font-bold text-white mb-4">Advanced Threat Protection</h3>
+                        <p class="text-gray-300 mb-6">AI-powered defense systems that adapt to emerging threats</p>
+                        <div class="grid grid-cols-2 gap-4 text-center">
+                            <div class="bg-[#1e293b]/50 rounded-lg p-4">
+                                <div class="text-2xl font-bold text-[#9655BD]">99.8%</div>
+                                <div class="text-sm text-gray-400">Threat Detection</div>
+                            </div>
+                            <div class="bg-[#1e293b]/50 rounded-lg p-4">
+                                <div class="text-2xl font-bold text-[#9655BD]">&lt;1sec</div>
+                                <div class="text-sm text-gray-400">Response Time</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Defense Layers -->
+    <section class="py-20 bg-[#0a0a0a]/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6 text-white">Multi-Layer Defense Architecture</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Comprehensive protection across all attack vectors</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Network Security -->
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="mb-6">
+                        <i class="ri-router-line text-4xl text-[#9655BD] mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Network Security</h3>
+                        <p class="text-gray-300 leading-relaxed">Advanced firewalls, intrusion prevention systems, and network segmentation to protect your infrastructure perimeter.</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Next-Gen Firewalls (NGFW)</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Intrusion Prevention Systems</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Network Access Control (NAC)</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Network Segmentation</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>DDoS Protection</li>
+                    </ul>
+                </div>
+
+                <!-- Endpoint Protection -->
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="mb-6">
+                        <i class="ri-computer-line text-4xl text-[#9655BD] mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Endpoint Protection</h3>
+                        <p class="text-gray-300 leading-relaxed">Comprehensive endpoint detection and response (EDR) solutions protecting all devices in your network.</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Endpoint Detection & Response</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Anti-malware Protection</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Behavioral Analysis</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Device Control</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Remote Remediation</li>
+                    </ul>
+                </div>
+
+                <!-- Email Security -->
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="mb-6">
+                        <i class="ri-mail-line text-4xl text-[#9655BD] mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Email Security</h3>
+                        <p class="text-gray-300 leading-relaxed">Advanced email protection against phishing, malware, and business email compromise attacks.</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Phishing Protection</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Malware Scanning</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>BEC Prevention</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Email Encryption</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Attachment Sandboxing</li>
+                    </ul>
+                </div>
+
+                <!-- Web Security -->
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="mb-6">
+                        <i class="ri-global-line text-4xl text-[#9655BD] mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Web Security</h3>
+                        <p class="text-gray-300 leading-relaxed">Secure web gateways and web application firewalls to protect against web-based threats.</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Web Application Firewall</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>URL Filtering</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>DNS Security</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>SSL/TLS Inspection</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Content Filtering</li>
+                    </ul>
+                </div>
+
+                <!-- Identity & Access -->
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="mb-6">
+                        <i class="ri-user-settings-line text-4xl text-[#9655BD] mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Identity & Access Management</h3>
+                        <p class="text-gray-300 leading-relaxed">Comprehensive identity governance and privileged access management solutions.</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Multi-Factor Authentication</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Privileged Access Management</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Single Sign-On (SSO)</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Identity Governance</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Access Analytics</li>
+                    </ul>
+                </div>
+
+                <!-- Cloud Security -->
+                <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
+                    <div class="mb-6">
+                        <i class="ri-cloud-line text-4xl text-[#9655BD] mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Cloud Security</h3>
+                        <p class="text-gray-300 leading-relaxed">Native cloud security solutions for AWS, Azure, and GCP environments with automated compliance.</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Cloud Security Posture</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Container Security</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>API Security</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>DevSecOps Integration</li>
+                        <li class="flex items-center"><i class="ri-check-line text-[#9655BD] mr-2"></i>Multi-Cloud Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Threat Intelligence -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6 text-white">Advanced Threat Intelligence</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Real-time threat intelligence feeds and analysis</p>
+            </div>
+
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mb-6">
-                        <i class="ri-bug-line text-3xl text-[#9655BD]"></i>
-                    </div>
-                    <h2 class="text-3xl font-bold mb-6">VAPT (Vulnerability Assessment & Penetration Testing)</h2>
-                    <p class="text-lg text-gray-300 mb-6">
-                        Comprehensive security testing that combines automated vulnerability scanning with manual penetration testing to identify security weaknesses in your infrastructure, applications, and networks.
+                    <h3 class="text-2xl font-bold text-white mb-6">Intelligence-Driven Defense</h3>
+                    <p class="text-gray-300 mb-8 leading-relaxed">
+                        Our threat intelligence platform aggregates data from global sources, providing contextual information about emerging threats, attacker tactics, and indicators of compromise to enhance your defense capabilities.
                     </p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Network penetration testing</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Application security assessment</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Infrastructure vulnerability scanning</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Social engineering testing</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Wireless security assessment</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Physical security testing</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="relative">
-                    <img 
-                        src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80" 
-                        alt="VAPT Testing" 
-                        class="rounded-2xl shadow-2xl border border-gray-700"
-                    />
-                </div>
-            </div>
-        </div>
-
-        <!-- Website Application Security Testing -->
-        <div class="mb-20">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="order-2 lg:order-1 relative">
-                    <img 
-                        src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80" 
-                        alt="Website Security Testing" 
-                        class="rounded-2xl shadow-2xl border border-gray-700"
-                    />
-                </div>
-                <div class="order-1 lg:order-2">
-                    <div class="w-16 h-16 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mb-6">
-                        <i class="ri-global-line text-3xl text-[#9655BD]"></i>
-                    </div>
-                    <h2 class="text-3xl font-bold mb-6">Website Application Security Testing</h2>
-                    <p class="text-lg text-gray-300 mb-6">
-                        Comprehensive security testing for web applications and websites to identify vulnerabilities and ensure robust protection against cyber attacks.
-                    </p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">OWASP Top 10 vulnerability testing</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">SQL injection detection and prevention</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Cross-site scripting (XSS) vulnerability assessment</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Authentication and session management testing</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Input validation and sanitization checks</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="ri-check-line text-[#9655BD] mr-3 mt-1"></i>
-                            <span class="text-gray-300">Business logic vulnerability assessment</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Additional Security Testing Services -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-            <!-- Mobile Application Security -->
-            <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
-                <div class="w-12 h-12 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mb-6">
-                    <i class="ri-smartphone-line text-2xl text-[#9655BD]"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-4">Mobile Application Security</h3>
-                <p class="text-gray-300 mb-6">
-                    Comprehensive security testing for iOS and Android applications.
-                </p>
-                <ul class="space-y-2 mb-6">
-                    <li class="flex items-start text-sm">
-                        <i class="ri-check-line text-[#9655BD] mr-2 mt-1"></i>
-                        <span class="text-gray-300">Static and dynamic analysis</span>
-                    </li>
-                    <li class="flex items-start text-sm">
-                        <i class="ri-check-line text-[#9655BD] mr-2 mt-1"></i>
-                        <span class="text-gray-300">API security testing</span>
-                    </li>
-                    <li class="flex items-start text-sm">
-                        <i class="ri-check-line text-[#9655BD] mr-2 mt-1"></i>
-                        <span class="text-gray-300">Data storage security</span>
-                    </li>
-                </ul>
-                <a href="{% url 'contact' %}" class="inline-flex items-center text-[#9655BD] hover:text-[#8b5cf6] transition-colors font-medium">
-                    Learn more
-                    <i class="ri-arrow-right-line ml-2"></i>
-                </a>
-            </div>
-
-            <!-- Cloud Security Assessment -->
-            <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
-                <div class="w-12 h-12 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mb-6">
-                    <i class="ri-cloud-line text-2xl text-[#9655BD]"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-4">Cloud Security Assessment</h3>
-                <p class="text-gray-300 mb-6">
-                    Evaluate and secure your cloud infrastructure and services.
-                </p>
-                <ul class="space-y-2 mb-6">
-                    <li class="flex items-start text-sm">
-                        <i class="ri-check-line text-[#9655BD] mr-2 mt-1"></i>
-                        <span class="text-gray-300">AWS, Azure, GCP security</span>
-                    </li>
-                    <li class="flex items-start text-sm">
-                        <i class="ri-check-line text-[#9655BD] mr-2 mt-1"></i>
-                        <span class="text-gray-300">Container security</span>
-                    </li>
-                    <li class="flex items-start text-sm">
-                        <i class="ri-check-line text-[#9655BD] mr-2 mt-1"></i>
-                        <span class="text-gray-300">IAM configuration review</span>
-                    </li>
-                </ul>
-                <a href="{% url 'contact' %}" class="inline-flex items-center text-[#9655BD] hover:text-[#8b5cf6] transition-colors font-medium">
-                    Learn more
-                    <i class="ri-arrow-right-line ml-2"></i>
-                </a>
-            </div>
-
-            <!-- API Security Testing -->
-            <div class="bg-[#1e293b] p-8 rounded-xl border border-gray-800 card-hover">
-                <div class="w-12 h-12 bg-[#9655BD]/20 rounded-lg flex items-center justify-center mb-6">
-                    <i class="ri-code-line text-2xl text-[#9655BD]"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-4">API Security Testing</h3>
-                <p class="text-gray-300 mb-6">
-                    Comprehensive testing of REST, GraphQL, and SOAP APIs.
-                </p>
-                <ul class="space-y-2 mb-6">
-                    <li class="flex items-start text-sm">
-                        <i class="ri-check-line text-[#9655BD] mr-2 mt-1"></i>
-                        <span class="text-gray-300">Authentication bypass testing</span>
-                    </li>
-                    <li class="flex items-start text-sm">
-                        <i class="ri-check-line text-[#9655BD] mr-2 mt-1"></i>
-                        <span class="text-gray-300">Rate limiting assessment</span>
-                    </li>
-                    <li class="flex items-start text-sm">
-                        <i class="ri-check-line text-[#9655BD] mr-2 mt-1"></i>
-                        <span class="text-gray-300">Data validation testing</span>
-                    </li>
-                </ul>
-                <a href="{% url 'contact' %}" class="inline-flex items-center text-[#9655BD] hover:text-[#8b5cf6] transition-colors font-medium">
-                    Learn more
-                    <i class="ri-arrow-right-line ml-2"></i>
-                </a>
-            </div>
-        </div>
-
-        <!-- Testing Methodology -->
-        <div class="bg-[#1e293b] rounded-2xl p-8 md:p-12 border border-gray-800 mb-20">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl font-bold mb-6">Our Testing Methodology</h2>
-                <p class="text-lg text-gray-300 mb-12">
-                    We follow industry-standard methodologies to ensure comprehensive security assessments.
-                </p>
-                
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="ri-search-line text-2xl text-[#9655BD]"></i>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-[#1e293b]/50 p-6 rounded-xl border border-gray-800">
+                            <i class="ri-global-line text-2xl text-[#9655BD] mb-3"></i>
+                            <h4 class="font-bold text-white mb-2">Global Threat Feeds</h4>
+                            <p class="text-sm text-gray-400">Real-time intelligence from worldwide sources</p>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Discovery</h3>
-                        <p class="text-gray-300">Information gathering and reconnaissance</p>
-                    </div>
-                    
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="ri-radar-line text-2xl text-[#9655BD]"></i>
+                        <div class="bg-[#1e293b]/50 p-6 rounded-xl border border-gray-800">
+                            <i class="ri-brain-line text-2xl text-[#9655BD] mb-3"></i>
+                            <h4 class="font-bold text-white mb-2">AI Analysis</h4>
+                            <p class="text-sm text-gray-400">Machine learning threat pattern recognition</p>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Scanning</h3>
-                        <p class="text-gray-300">Automated vulnerability identification</p>
-                    </div>
-                    
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="ri-sword-line text-2xl text-[#9655BD]"></i>
+                        <div class="bg-[#1e293b]/50 p-6 rounded-xl border border-gray-800">
+                            <i class="ri-map-pin-line text-2xl text-[#9655BD] mb-3"></i>
+                            <h4 class="font-bold text-white mb-2">IOC Tracking</h4>
+                            <p class="text-sm text-gray-400">Indicators of compromise monitoring</p>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Exploitation</h3>
-                        <p class="text-gray-300">Manual testing and validation</p>
-                    </div>
-                    
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-[#9655BD]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="ri-file-text-line text-2xl text-[#9655BD]"></i>
+                        <div class="bg-[#1e293b]/50 p-6 rounded-xl border border-gray-800">
+                            <i class="ri-team-line text-2xl text-[#9655BD] mb-3"></i>
+                            <h4 class="font-bold text-white mb-2">Attribution Analysis</h4>
+                            <p class="text-sm text-gray-400">Threat actor profiling and attribution</p>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Reporting</h3>
-                        <p class="text-gray-300">Detailed findings and remediation</p>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-[#9655BD]/10 to-[#C084FC]/5 rounded-2xl p-8 border border-[#9655BD]/20">
+                    <h4 class="text-xl font-bold text-white mb-6">Threat Intelligence Sources</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between bg-[#1e293b]/30 p-3 rounded-lg">
+                            <span class="text-gray-300">Commercial Feeds</span>
+                            <span class="text-[#9655BD]">15+ Sources</span>
+                        </div>
+                        <div class="flex items-center justify-between bg-[#1e293b]/30 p-3 rounded-lg">
+                            <span class="text-gray-300">Open Source Intel</span>
+                            <span class="text-[#9655BD]">50+ Feeds</span>
+                        </div>
+                        <div class="flex items-center justify-between bg-[#1e293b]/30 p-3 rounded-lg">
+                            <span class="text-gray-300">Dark Web Monitoring</span>
+                            <span class="text-[#9655BD]">24/7</span>
+                        </div>
+                        <div class="flex items-center justify-between bg-[#1e293b]/30 p-3 rounded-lg">
+                            <span class="text-gray-300">Honeypot Networks</span>
+                            <span class="text-[#9655BD]">Global</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- CTA Section -->
-<section class="py-20 bg-gradient-cyber relative">
-    <div class="absolute inset-0 bg-cyber-pattern opacity-10"></div>
-    <div class="container mx-auto px-4 md:px-6 relative z-10">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                Secure Your Applications Today
-            </h2>
-            <p class="text-xl text-gray-300 mb-10">
-                Don't wait for attackers to find your vulnerabilities. Let our experts identify and help fix them first.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="{% url 'contact' %}" class="bg-[#9655BD] hover:bg-[#8b5cf6] text-white font-medium px-8 py-4 rounded-lg transition-all text-lg">
-                    Schedule Assessment
-                </a>
-                <a href="{% url 'pricing' %}" class="bg-[#1e293b] hover:bg-[#0f172a] border border-gray-700 text-white font-medium px-8 py-4 rounded-lg transition-all text-lg">
-                    View Pricing
-                </a>
+    <!-- Implementation Process -->
+    <section class="py-20 bg-[#0a0a0a]/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6 text-white">Implementation Process</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Structured approach to deploying comprehensive cyber defense</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-[#9655BD]/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-[#9655BD]">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Assessment</h3>
+                    <p class="text-gray-400">Comprehensive security assessment and risk analysis</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-[#9655BD]/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-[#9655BD]">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Design</h3>
+                    <p class="text-gray-400">Custom defense architecture design and planning</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-[#9655BD]/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-[#9655BD]">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Deploy</h3>
+                    <p class="text-gray-400">Phased implementation with minimal business disruption</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-[#9655BD]/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-[#9655BD]">4</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Optimize</h3>
+                    <p class="text-gray-400">Continuous monitoring and optimization</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="bg-gradient-to-r from-[#9655BD]/20 to-[#C084FC]/10 rounded-2xl p-12 text-center border border-[#9655BD]/20">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Strengthen Your Cyber Defense</h2>
+                <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Deploy multi-layered security architecture designed to protect against advanced threats and ensure business continuity.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="{% url 'contact' %}" class="bg-[#9655BD] hover:bg-[#9655BD]/80 text-white font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105">
+                        Schedule Assessment
+                    </a>
+                    <a href="{% url 'solutions' %}" class="border border-[#9655BD] text-[#9655BD] hover:bg-[#9655BD] hover:text-white font-bold py-3 px-8 rounded-lg transition-all">
+                        View Solutions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<style>
+.card-hover {
+    transition: all 0.3s ease;
+}
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(150, 85, 189, 0.1);
+}
+</style>
 {% endblock %}
