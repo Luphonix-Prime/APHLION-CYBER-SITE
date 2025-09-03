@@ -10,7 +10,7 @@
         <!-- Blog Header -->
         <div class="mb-8">
             <div class="flex items-center text-sm text-gray-400 mb-4">
-                <a href="{% url 'resources' %}" class="hover:text-[#9655BD]">Resources</a>
+                <a href="{% url 'resources' %}" class="hover:text-[#6e3691]">Resources</a>
                 <i class="ri-arrow-right-s-line mx-2"></i>
                 <span>{{ page.title }}</span>
             </div>
@@ -32,7 +32,7 @@
                 {% if page.tags %}
                 <div class="flex gap-2">
                     {% for tag in page.tags|split:"," %}
-                    <span class="bg-[#9655BD]/10 text-[#9655BD] px-2 py-1 rounded text-xs">{{ tag|strip }}</span>
+                    <span class="bg-[#6e3691]/10 text-[#6e3691] px-2 py-1 rounded text-xs">{{ tag|strip }}</span>
                     {% endfor %}
                 </div>
                 {% endif %}

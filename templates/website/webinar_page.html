@@ -10,7 +10,7 @@
         <!-- Webinar Header -->
         <div class="mb-8">
             <div class="flex items-center text-sm text-gray-400 mb-4">
-                <a href="{% url 'resources' %}" class="hover:text-[#9655BD]">Resources</a>
+                <a href="{% url 'resources' %}" class="hover:text-[#6e3691]">Resources</a>
                 <i class="ri-arrow-right-s-line mx-2"></i>
                 <span>{{ page.title }}</span>
             </div>
@@ -19,7 +19,7 @@
             <div class="w-full h-64 md:h-80 rounded-xl overflow-hidden mb-6 relative">
                 <img src="{{ page.featured_image.file.url }}" alt="{{ page.title }}" class="w-full h-full object-cover">
                 <div class="absolute top-4 left-4">
-                    <span class="{% if page.status == 'live' %}bg-green-500{% elif page.status == 'upcoming' %}bg-[#9655BD]{% else %}bg-blue-500{% endif %} text-white px-3 py-1 rounded-full text-sm font-medium">
+                    <span class="{% if page.status == 'live' %}bg-green-500{% elif page.status == 'upcoming' %}bg-[#6e3691]{% else %}bg-blue-500{% endif %} text-white px-3 py-1 rounded-full text-sm font-medium">
                         {% if page.status == 'live' %}Live Now{% elif page.status == 'upcoming' %}Upcoming{% else %}On Demand{% endif %}
                     </span>
                 </div>
@@ -58,7 +58,7 @@
             
             {% if page.registration_link %}
             <div class="flex gap-4">
-                <a href="{{ page.registration_link }}" class="bg-[#9655BD] hover:bg-[#8b5cf6] text-white px-8 py-3 rounded-lg font-medium transition-colors inline-flex items-center">
+                <a href="{{ page.registration_link }}" class="bg-[#6e3691] hover:bg-[#8b5cf6] text-white px-8 py-3 rounded-lg font-medium transition-colors inline-flex items-center">
                     {% if page.status == 'live' %}Join Live{% elif page.status == 'upcoming' %}Register Now{% else %}Watch Recording{% endif %}
                     <i class="ri-arrow-right-line ml-2"></i>
                 </a>

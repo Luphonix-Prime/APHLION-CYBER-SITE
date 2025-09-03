@@ -7,8 +7,8 @@ body {
 
 /* Custom Colors */
 :root {
-    --primary: #9655BD;
-    --primary-hover: #9655BD;
+    --primary: #6e3691;
+    --primary-hover: #6e3691;
     --secondary: #8b5cf6;
 }
 
@@ -118,7 +118,7 @@ body {
 }
 .compliance-card:hover {
     box-shadow: 0 8px 32px 0 rgba(150,85,189,0.25);
-    border-color: #9655BD;
+    border-color: #6e3691;
 }
 
 
